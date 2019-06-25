@@ -1,0 +1,118 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "829c9a001b9f46f187b088ed727937a3",
+    "Name": "EnemyGroup",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "df7fcec7607a4623b1acacb72bd42616", "Name": "Enemy" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "df7fcec7607a4623b1acacb72bd42616",
+    "Name": "Enemy",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "70449d66178e0d9f66795c24f0fbbdfc", "Name": "TransformLocalPosition" },
+        "Properties": {
+            "position": {
+                "Type": { "Id": "f139194553e8ae4a3250c5527d6de169", "Name": "Vector3" },
+                "Properties": {
+                    "x": 0,
+                    "y": 6
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "2266a95f5d16ca1ddde710d7c047ba69", "Name": "TransformLocalRotation" },
+        "Properties": {
+            "rotation": {
+                "Type": { "Id": "dc7e11e5d517ed01fd5d084a6c9fd64d", "Name": "Quaternion" },
+                "Properties": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "f11fe490eefc969bbc3fde5eab5ccd1e", "Name": "TransformLocalScale" }
+    }, {
+        "Type": { "Id": "1c504a8a7963db0d32e89b527b90e057", "Name": "Sprite2DRenderer" },
+        "Properties": {
+            "sprite": { "$TypeId": 10, "Guid": "b0a8184c4bca1466b98931fd600a164b", "FileId": 21300000, "Type": 3 }
+        }
+    }, {
+        "Type": { "Id": "288a861a8ca311346faecf4c20a2da76", "Name": "SortingGroup" }
+    }, {
+        "Type": { "Id": "be2f221c9af74ec5c0a4495a2d6769a3", "Name": "Sprite2DRendererOptions" },
+        "Properties": {
+            "size": {
+                "Type": { "Id": "3abb69286ddfc2d1c617a173c1eeb35d", "Name": "Vector2" },
+                "Properties": {
+                    "x": 0.4,
+                    "y": 0.8
+                }
+            }
+        }
+    }, {
+        "Type": { "Id": "b1e5348389156b7a260d6ed393754fba", "Name": "LayerSorting" },
+        "Properties": {
+            "order": 4
+        }
+    }, {
+        "Type": { "Id": "7048e772d86e4a2cb90878b85f925911", "Name": "EnemyTag" }
+    }, {
+        "Type": { "Id": "95eba163dce5bfff5420a5a8c2845523", "Name": "Sprite2DSequence" },
+        "Properties": {
+            "sprites": {
+                "Type": { "Id": "cf54a635a25248ab87f2563bb840ed5b", "Name": "SpriteEntity" },
+                "Items": [
+                    { "$TypeId": 10, "Guid": "b0a8184c4bca1466b98931fd600a164b", "FileId": 21300000, "Type": 3 },
+                    { "$TypeId": 10, "Guid": "b0a8184c4bca1466b98931fd600a164b", "FileId": 21300034, "Type": 3 }
+                ]
+            },
+            "frameRate": 8
+        }
+    }, {
+        "Type": { "Id": "d2cfd18aa4facc33b1da7ae05205691b", "Name": "Sprite2DSequencePlayer" },
+        "Properties": {
+            "sequence": { "$TypeId": 9, "Id": "df7fcec7607a4623b1acacb72bd42616", "Name": "Enemy" },
+            "speed": 1
+        }
+    }, {
+        "Type": { "Id": "4731f7ca6a1640dab052da959acfe03c", "Name": "MoveSpeed" },
+        "Properties": {
+            "speed": 1
+        }
+    }, {
+        "Type": { "Id": "953d31e9869344eba46a5bc14edeeda1", "Name": "Boundaries" },
+        "Properties": {
+            "minX": -3.1,
+            "maxX": 3.1,
+            "minY": -6,
+            "maxY": 6
+        }
+    }, {
+        "Type": { "Id": "70ab49d3aae448c7aa104f4024dba1ae", "Name": "ChangeOverTime" }
+    }, {
+        "Type": { "Id": "a015bc52c7befa4d7484891d74d2b574", "Name": "RectHitBox2D" },
+        "Properties": {
+            "box": {
+                "Type": { "Id": "f216da154c4054842adb590807e977ba", "Name": "Rect" },
+                "Properties": {
+                    "x": -0.2,
+                    "y": -0.3,
+                    "width": 0.4,
+                    "height": 0.5
+                }
+            }
+        }
+    }]
+}]

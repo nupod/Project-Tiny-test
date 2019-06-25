@@ -1,0 +1,37 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "d9b625b0511e4af29375ec36e446bf5f",
+    "Name": "Spawner",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "dd52ea8becf44fe78cc59f8a59875135",
+        "Name": "time",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "e87bbc971c5b48fabce4d73df6008fcb",
+        "Name": "delay",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "214a8c916db84476a82816888d0d3189",
+        "Name": "isPaused",
+        "FieldType": { "Id": "2b477f505af74487b7092b5617d88d3f", "Name": "Boolean" },
+        "Array": false,
+        "Visibility": 0
+    }, {
+        "Id": "243762ceaceb4a9284bc8d02257f79d2",
+        "Name": "spawnedGroup",
+        "FieldType": { "Id": "1bff5adddd7c41de98d3329c7c641208", "Name": "String" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "d9b625b0511e4af29375ec36e446bf5f", "Name": "Spawner" }
+    }
+}]

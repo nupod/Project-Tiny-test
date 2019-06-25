@@ -1,0 +1,142 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/HelloWorld/html5/development/build/runtime.js",
+                "Size": 5750849,
+                "CompressedSize": 719636
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 9672,
+                "CompressedSize": 0
+            }
+        }, {
+            "Item": {
+                "Name": "Assets/GT1/HelloWorld/Sprites/GalaxyRaiders.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "b0a8184c4bca1466b98931fd600a164b", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/HelloWorld/html5/development/artifacts/assets/GalaxyRaiders.png",
+                    "Size": 8476,
+                    "CompressedSize": 6336,
+                    "Object": { "$TypeId": 10, "Guid": "b0a8184c4bca1466b98931fd600a164b", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/GT1/HelloWorld/Sprites/Empty.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "8319fe645d01b4d5790385e22be76a0e", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/HelloWorld/html5/development/artifacts/assets/Empty.png",
+                    "Size": 19984,
+                    "CompressedSize": 1937,
+                    "Object": { "$TypeId": 10, "Guid": "8319fe645d01b4d5790385e22be76a0e", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "Assets/GT1/HelloWorld/Sprites/background.png",
+                "Size": 0,
+                "CompressedSize": 0,
+                "Object": { "$TypeId": 10, "Guid": "76f3b2eb9ca464829bcbdcc8f7b53b05", "FileId": 2800000, "Type": 3 }
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/HelloWorld/html5/development/artifacts/assets/background.png",
+                    "Size": 11928,
+                    "CompressedSize": 8883,
+                    "Object": { "$TypeId": 10, "Guid": "76f3b2eb9ca464829bcbdcc8f7b53b05", "FileId": 2800000, "Type": 3 }
+                }
+            }]
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/HelloWorld/html5/development/build/entities.js",
+                "Size": 16936,
+                "CompressedSize": 2882
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "EnemyGroup",
+                    "Size": 3028,
+                    "CompressedSize": 891
+                }
+            }, {
+                "Item": {
+                    "Name": "ExplosionGroup",
+                    "Size": 2523,
+                    "CompressedSize": 675
+                }
+            }, {
+                "Item": {
+                    "Name": "MainGroup",
+                    "Size": 11307,
+                    "CompressedSize": 2204
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/HelloWorld/html5/development/build/bindings.js",
+                "Size": 108115,
+                "CompressedSize": 8906
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/HelloWorld/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 17445,
+                    "CompressedSize": 3920
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/HelloWorld/html5/development/build/main.js",
+                "Size": 5068,
+                "CompressedSize": 1311
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/HelloWorld/html5/development/build/wsclient.js",
+                "Size": 9391,
+                "CompressedSize": 2619
+            }
+        }]
+    }]
+}

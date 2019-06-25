@@ -1,0 +1,22 @@
+﻿[{
+    "$TypeId": 3,
+    "Id": "70ab49d3aae448c7aa104f4024dba1ae",
+    "Name": "ChangeOverTime",
+    "ExportFlags": 0,
+    "Unlisted": false,
+    "Visibility": 0,
+    "TypeCode": "Component",
+    "Fields": [{
+        "Id": "e91af60bdf8a41758e8c80e94928abe4",
+        "Name": "changePerSecond",
+        "FieldType": { "Id": "67325dccf2f047c19c7ef4a045354e67", "Name": "Float32" },
+        "Array": false,
+        "Visibility": 0
+    }],
+    "DefaultValue": {
+        "Type": { "Id": "70ab49d3aae448c7aa104f4024dba1ae", "Name": "ChangeOverTime" },
+        "Properties": {
+            "changePerSecond": 0.05
+        }
+    }
+}]

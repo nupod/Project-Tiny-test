@@ -1,0 +1,237 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "PlayerCollisionSystem",
+            "QualifiedName": "game.PlayerCollisionSystem",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/PlayerCollisionSystem.ts",
+                "Line": 9,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "PlayerMovementSystem",
+            "QualifiedName": "game.PlayerMovementSystem",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/PlayerMovementSystem.ts",
+                "Line": 10,
+                "Character": 17
+            },
+            "ExecuteAfter": [
+                "ut.Shared.InputFence"
+            ]
+        },
+        {
+            "Name": "ScrollingBackgroundSystem",
+            "QualifiedName": "game.ScrollingBackgroundSystem",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/ScrollingBackgroundSystem.ts",
+                "Line": 9,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "SpawnSystem",
+            "QualifiedName": "game.SpawnSystem",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/SpawnSystem.ts",
+                "Line": 9,
+                "Character": 17
+            }
+        },
+        {
+            "Name": "Time",
+            "QualifiedName": "ut.Time",
+            "Description": "Placeholder system to provide a UnityEngine.Time like API\r\n\r\ne.g. \r\n  let deltaTime = ut.Time.deltaTime();\r\n  let time = ut.Time.time();",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/Time.ts",
+                "Line": 12,
+                "Character": 17
+            },
+            "ExecuteBefore": [
+                "ut.Shared.UserCodeStart"
+            ]
+        }
+    ],
+    "Filters": [
+        {
+            "Name": "EnemyBehaviorFilter",
+            "QualifiedName": "game.EnemyBehaviorFilter",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                "Line": 9,
+                "Character": 17
+            },
+            "Fields": [
+                {
+                    "Name": "entity",
+                    "QualifiedName": "ut.Entity",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 10,
+                        "Character": 3
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "position",
+                    "QualifiedName": "ut.Core2D.TransformLocalPosition",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 11,
+                        "Character": 27
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "tag",
+                    "QualifiedName": "game.EnemyTag",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 12,
+                        "Character": 52
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "speed",
+                    "QualifiedName": "game.MoveSpeed",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 13,
+                        "Character": 22
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "speedChange",
+                    "QualifiedName": "game.ChangeOverTime",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 14,
+                        "Character": 25
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                },
+                {
+                    "Name": "bounds",
+                    "QualifiedName": "game.Boundaries",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 15,
+                        "Character": 36
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                }
+            ]
+        }
+    ],
+    "Behaviours": [
+        {
+            "Name": "EnemyBehavior",
+            "QualifiedName": "game.EnemyBehavior",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                "Line": 20,
+                "Character": 17
+            },
+            "Fields": [
+                {
+                    "Name": "data",
+                    "QualifiedName": "game.EnemyBehaviorFilter",
+                    "Description": "",
+                    "Source": {
+                        "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+                        "Line": 21,
+                        "Character": 3
+                    },
+                    "IsStatic": false,
+                    "IsReadonly": false,
+                    "IsOptional": false,
+                    "IsPublic": true
+                }
+            ],
+            "Methods": [
+                "OnEntityEnable",
+                "OnEntityUpdate"
+            ]
+        }
+    ],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 80,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 210,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 1110,
+            "Steps": 16
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 90,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 30,
+            "Steps": 5
+        }
+    ],
+    "SourceFiles": [
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/EnemyBehavior.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/GameService.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/PlayerCollisionSystem.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/PlayerMovementSystem.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/ScrollingBackgroundSystem.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/SpawnSystem.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/GT1/HelloWorld/Scripts/Time.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "0ffaa2c95de2cb1fd1695b83ede602e8",
+    "GeneratedAt": "Tue Jun 25 2019 12:24:48 GMT+0300 (RTZ 2 (зима))"
+}

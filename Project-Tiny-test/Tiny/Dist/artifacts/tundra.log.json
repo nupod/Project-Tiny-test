@@ -1,0 +1,5 @@
+{"msg":"init","dagFile":"artifacts/tundra.dag","targets":[]}
+{"msg":"newNode","annotation":"Download and unpack artifacts/Stevedore/7za-win-x64/.StevedoreVersion","index":1}
+{"msg":"newNode","annotation":"Download and unpack artifacts/Stevedore/tiny-dist/.StevedoreVersion","index":2}
+{"msg":"newNode","annotation":"Download and unpack artifacts/Stevedore/tiny-samples/.StevedoreVersion","index":3}
+{"msg":"newNode","annotation":"all_tundra_nodes","index":0}

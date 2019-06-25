@@ -1,0 +1,63 @@
+﻿[{
+    "$TypeId": 4,
+    "Id": "7bf04bfa601a46fe84f5aff6e5bfb595",
+    "Name": "NewEntityGroup",
+    "ExportFlags": 0,
+    "SerializedVersion": 0,
+    "Entities": [
+        { "$TypeId": 9, "Id": "266f503d57d54499959c710bcc7dc316", "Name": "Camera" },
+        { "$TypeId": 9, "Id": "184d908955694b3c9a4492b48554bf5c", "Name": "VideoPlayer" }
+    ]
+},
+{
+    "$TypeId": 5,
+    "Id": "266f503d57d54499959c710bcc7dc316",
+    "Name": "Camera",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "c895dbe72eb46ecb10d589d320151758", "Name": "TransformNode" }
+    }, {
+        "Type": { "Id": "12692383f3fef3bb74c209888c5b0939", "Name": "Camera2D" },
+        "Properties": {
+            "backgroundColor": {
+                "Type": { "Id": "2a90a1633d6dc16cd37cdfaca7b93cea", "Name": "Color" },
+                "Properties": {
+                    "r": 0.5471698,
+                    "g": 0.5471698,
+                    "b": 0.5471698,
+                    "a": 1
+                }
+            },
+            "clearFlags": {
+                "$TypeId": 8,
+                "Type": { "Id": "76a06ddd38e99125d930e77c6a287872", "Name": "CameraClearFlags" },
+                "Id": "9faedc246f34513076701ef66b5ad74f",
+                "Name": "SolidColor",
+                "Value": 1
+            },
+            "depth": -1
+        }
+    }]
+},
+{
+    "$TypeId": 5,
+    "Id": "184d908955694b3c9a4492b48554bf5c",
+    "Name": "VideoPlayer",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "bb3ac302b573b252dfb8e684ea95cd6a", "Name": "VideoPlayer" },
+        "Properties": {
+            "controls": false,
+            "loop": true
+        }
+    }, {
+        "Type": { "Id": "f42f4035efa3ddba0108b7cd47b2b5d1", "Name": "VideoClip" },
+        "Properties": {
+            "src": "Assets/SampleVideo.mp4"
+        }
+    }]
+}]

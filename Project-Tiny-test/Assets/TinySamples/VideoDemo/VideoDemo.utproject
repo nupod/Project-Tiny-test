@@ -1,0 +1,84 @@
+﻿[{
+    "$TypeId": 1,
+    "Id": "23869fc16df049c2922e4a1c04f8a32b",
+    "Name": "VideoDemo",
+    "ExportFlags": 0,
+    "SerializedVersion": 7,
+    "Settings": {
+        "CanvasWidth": 1920,
+        "CanvasHeight": 1080,
+        "EmbedAssets": false,
+        "CanvasAutoResize": true,
+        "RenderMode": 0,
+        "DefaultTextureSettings": {
+            "$TypeId": 2,
+            "Embedded": false,
+            "FormatType": 0,
+            "JpgCompressionQuality": 75,
+            "WebPCompressionQuality": 60
+        },
+        "DefaultAudioClipSettings": {
+            "$TypeId": 3,
+            "Embedded": false
+        },
+        "DefaultAnimationClipSettings": {
+            "$TypeId": 4,
+            "Embedded": false
+        },
+        "LocalWSServerPort": 17700,
+        "LocalHTTPServerPort": 19050,
+        "SingleFileHtml": false,
+        "MemorySize": 16,
+        "IncludeWebPDecompressor": false,
+        "RunBabel": true,
+        "MinifyJavaScript": true,
+        "LinkToSource": true,
+        "SymbolsInReleaseBuild": false
+    },
+    "Module": { "Id": "43998cf59826420a8b6f66672711603f", "Name": "Main" },
+    "Configuration": { "$TypeId": 9, "Id": "c473d484eee348e1a70e538226d2c9ef", "Name": "Configuration" }
+},
+{
+    "$TypeId": 2,
+    "Id": "43998cf59826420a8b6f66672711603f",
+    "Name": "Main",
+    "SerializedVersion": 1,
+    "ExportFlags": 0,
+    "Namespace": "game",
+    "Options": 4,
+    "Dependencies": [
+        { "Id": "30097418841f56d73400bf82ee859ac9", "Name": "UTiny.Core2D" },
+        { "Id": "29e5e02a3a0442beb9e6828c78a7ff91", "Name": "UTiny.EntityGroup" },
+        { "Id": "494f9eba840c1f117459611e605884b0", "Name": "UTiny.Core2DTypes" },
+        { "Id": "eae58004250dcd15a6c834b07677ca28", "Name": "UTiny.HTML" },
+        { "Id": "2af0cd3b47a732bf738688ceab312689", "Name": "UTiny.Core" },
+        { "Id": "404877ed746affa8a6081ad8161dd8de", "Name": "UTiny.EditorExtensions" },
+        { "Id": "a1b50987659c653138795a8f4079fc10", "Name": "UTiny.Math" },
+        { "Id": "ce3f1bd7050540b70d450a606e226ea2", "Name": "UTiny.Shared" },
+        { "Id": "5e48b999335625d27a5110d9abf698b1", "Name": "UTiny.Video" }
+    ],
+    "Assets": [{
+        "Object": { "$TypeId": 10, "Guid": "bbf3bbf02baaa44af845b34d0d70c7af", "FileId": 32900000, "Type": 3 },
+        "ExportSettings": {
+            "$TypeId": 1,
+            "Embedded": false
+        }
+    }],
+    "StartupEntityGroup": { "Id": "7bf04bfa601a46fe84f5aff6e5bfb595", "Name": "NewEntityGroup" }
+},
+{
+    "$TypeId": 5,
+    "Id": "c473d484eee348e1a70e538226d2c9ef",
+    "Name": "Configuration",
+    "Enabled": true,
+    "Static": false,
+    "Layer": 0,
+    "Components": [{
+        "Type": { "Id": "575fe161bc06950c954480d04c70c9ab", "Name": "DisplayInfo" },
+        "Properties": {
+            "width": 1920,
+            "height": 1080,
+            "autoSizeToFrame": true
+        }
+    }]
+}]
