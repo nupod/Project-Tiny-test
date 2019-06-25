@@ -1,36 +1,4 @@
-declare namespace entities.game.EnemyGroup {
-
-class Component extends ut.Component {
-  constructor();
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: Component): Component;
-  static _toPtr(p: number, v: Component): void;
-  static _tempHeapPtr(v: Component): number;
-  static _dtorFn(v: Component): void;
-}
-
-}
-declare namespace entities.game.ExplosionGroup {
-
-class Component extends ut.Component {
-  constructor();
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: Component): Component;
-  static _toPtr(p: number, v: Component): void;
-  static _tempHeapPtr(v: Component): number;
-  static _dtorFn(v: Component): void;
-}
-
-}
-declare namespace entities.game.MainGroup {
+declare namespace entities.game.NewScene {
 
 class Component extends ut.Component {
   constructor();
@@ -48,65 +16,7 @@ class Component extends ut.Component {
 }
 declare namespace game {
 
-class Boundaries extends ut.Component {
-  constructor(minX?: number, maxX?: number, minY?: number, maxY?: number);
-  minX: number;
-  maxX: number;
-  minY: number;
-  maxY: number;
-  static readonly minX: ComponentFieldDesc;
-  static readonly maxX: ComponentFieldDesc;
-  static readonly minY: ComponentFieldDesc;
-  static readonly maxY: ComponentFieldDesc;
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: Boundaries): Boundaries;
-  static _toPtr(p: number, v: Boundaries): void;
-  static _tempHeapPtr(v: Boundaries): number;
-  static _dtorFn(v: Boundaries): void;
-}
-
-}
-declare namespace game {
-
-class ChangeOverTime extends ut.Component {
-  constructor(changePerSecond?: number);
-  changePerSecond: number;
-  static readonly changePerSecond: ComponentFieldDesc;
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: ChangeOverTime): ChangeOverTime;
-  static _toPtr(p: number, v: ChangeOverTime): void;
-  static _tempHeapPtr(v: ChangeOverTime): number;
-  static _dtorFn(v: ChangeOverTime): void;
-}
-
-}
-declare namespace game {
-
-class EnemyTag extends ut.Component {
-  constructor();
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: EnemyTag): EnemyTag;
-  static _toPtr(p: number, v: EnemyTag): void;
-  static _tempHeapPtr(v: EnemyTag): number;
-  static _dtorFn(v: EnemyTag): void;
-}
-
-}
-declare namespace game {
-
-class MoveSpeed extends ut.Component {
+class Movement extends ut.Component {
   constructor(speed?: number);
   speed: number;
   static readonly speed: ComponentFieldDesc;
@@ -115,72 +25,10 @@ class MoveSpeed extends ut.Component {
   static readonly _isSharedComp: boolean;
 
   static _size: number;
-  static _fromPtr(p: number, v?: MoveSpeed): MoveSpeed;
-  static _toPtr(p: number, v: MoveSpeed): void;
-  static _tempHeapPtr(v: MoveSpeed): number;
-  static _dtorFn(v: MoveSpeed): void;
-}
-
-}
-declare namespace game {
-
-class PlayerTag extends ut.Component {
-  constructor();
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: PlayerTag): PlayerTag;
-  static _toPtr(p: number, v: PlayerTag): void;
-  static _tempHeapPtr(v: PlayerTag): number;
-  static _dtorFn(v: PlayerTag): void;
-}
-
-}
-declare namespace game {
-
-class ScrollingBackground extends ut.Component {
-  constructor(speed?: number, threshold?: number, distance?: number);
-  speed: number;
-  threshold: number;
-  distance: number;
-  static readonly speed: ComponentFieldDesc;
-  static readonly threshold: ComponentFieldDesc;
-  static readonly distance: ComponentFieldDesc;
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: ScrollingBackground): ScrollingBackground;
-  static _toPtr(p: number, v: ScrollingBackground): void;
-  static _tempHeapPtr(v: ScrollingBackground): number;
-  static _dtorFn(v: ScrollingBackground): void;
-}
-
-}
-declare namespace game {
-
-class Spawner extends ut.Component {
-  constructor(time?: number, delay?: number, isPaused?: boolean, spawnedGroup?: string);
-  time: number;
-  delay: number;
-  isPaused: boolean;
-  spawnedGroup: string;
-  static readonly time: ComponentFieldDesc;
-  static readonly delay: ComponentFieldDesc;
-  static readonly isPaused: ComponentFieldDesc;
-  
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: Spawner): Spawner;
-  static _toPtr(p: number, v: Spawner): void;
-  static _tempHeapPtr(v: Spawner): number;
-  static _dtorFn(v: Spawner): void;
+  static _fromPtr(p: number, v?: Movement): Movement;
+  static _toPtr(p: number, v: Movement): void;
+  static _tempHeapPtr(v: Movement): number;
+  static _dtorFn(v: Movement): void;
 }
 
 }
@@ -487,49 +335,7 @@ class EntityLayer extends ut.Component {
 
 }
 declare namespace game {
-
-class EnemyBehavior_State extends ut.Component {
-  constructor(initialized?: boolean, enabled?: boolean, onEnableCalled?: boolean, onDisableCalled?: boolean);
-  initialized: boolean;
-  enabled: boolean;
-  onEnableCalled: boolean;
-  onDisableCalled: boolean;
-  static readonly initialized: ComponentFieldDesc;
-  static readonly enabled: ComponentFieldDesc;
-  static readonly onEnableCalled: ComponentFieldDesc;
-  static readonly onDisableCalled: ComponentFieldDesc;
-  static readonly cid: number;
-  static readonly _view: any;
-  static readonly _isSharedComp: boolean;
-
-  static _size: number;
-  static _fromPtr(p: number, v?: EnemyBehavior_State): EnemyBehavior_State;
-  static _toPtr(p: number, v: EnemyBehavior_State): void;
-  static _tempHeapPtr(v: EnemyBehavior_State): number;
-  static _dtorFn(v: EnemyBehavior_State): void;
-}
-
-}
-declare namespace game {
-var PlayerCollisionSystemJS: ut.SystemJS;
-}
-declare namespace game {
-var PlayerMovementSystemJS: ut.SystemJS;
-}
-declare namespace game {
-var ScrollingBackgroundSystemJS: ut.SystemJS;
-}
-declare namespace game {
-var SpawnSystemJS: ut.SystemJS;
-}
-declare namespace ut {
-var TimeJS: ut.SystemJS;
-}
-declare namespace game {
-var EnemyBehavior_OnEntityEnableJS: ut.SystemJS;
-}
-declare namespace game {
-var EnemyBehavior_OnEntityUpdateJS: ut.SystemJS;
+var MovementSystemJS: ut.SystemJS;
 }
 
 

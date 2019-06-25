@@ -1,0 +1,85 @@
+﻿{
+    "Item": {
+        "Name": "Project",
+        "Size": 0,
+        "CompressedSize": 0
+    },
+    "Children": [{
+        "Item": {
+            "Name": "Runtime",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/SimpleInput/html5/development/build/runtime.js",
+                "Size": 5750849,
+                "CompressedSize": 719636
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Assets",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "JavaScript",
+                "Size": 365,
+                "CompressedSize": 0
+            }
+        }]
+    }, {
+        "Item": {
+            "Name": "Code",
+            "Size": 0,
+            "CompressedSize": 0
+        },
+        "Children": [{
+            "Item": {
+                "Name": "TinyExport/SimpleInput/html5/development/build/entities.js",
+                "Size": 5363,
+                "CompressedSize": 1299
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "NewScene",
+                    "Size": 5280,
+                    "CompressedSize": 1221
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/SimpleInput/html5/development/build/bindings.js",
+                "Size": 78310,
+                "CompressedSize": 6190
+            }
+        }, {
+            "Item": {
+                "Name": "Linked Code Files",
+                "Size": 0,
+                "CompressedSize": 0
+            },
+            "Children": [{
+                "Item": {
+                    "Name": "TinyExport/SimpleInput/html5/development/artifacts/scripts/tsc-emit.js",
+                    "Size": 6136,
+                    "CompressedSize": 1751
+                }
+            }]
+        }, {
+            "Item": {
+                "Name": "TinyExport/SimpleInput/html5/development/build/main.js",
+                "Size": 2616,
+                "CompressedSize": 841
+            }
+        }, {
+            "Item": {
+                "Name": "TinyExport/SimpleInput/html5/development/build/wsclient.js",
+                "Size": 9391,
+                "CompressedSize": 2619
+            }
+        }]
+    }]
+}

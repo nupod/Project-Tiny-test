@@ -2,30 +2,19 @@
 using UTiny.Core2D;
 using UTiny.Math;
 using UTiny.Shared;
-using ut;
 using UTiny.HTML;
 using UTiny.Rendering;
+using UTiny.UILayout;
+using UTiny.Text;
 using ut.EditorExtensions;
-using UTiny.HitBox2D;
+using ut;
 
 /*
  * !!! TEMP UNITL PROPER SCENE FORMAT !!!
  */
 namespace entities.game
 {
-    namespace EnemyGroup
-    {
-        public struct Component : IComponentData
-        {
-        }
-    }
-    namespace ExplosionGroup
-    {
-        public struct Component : IComponentData
-        {
-        }
-    }
-    namespace MainGroup
+    namespace Scene
     {
         public struct Component : IComponentData
         {
@@ -35,40 +24,6 @@ namespace entities.game
 
 namespace game
 {
-    public struct Boundaries : IComponentData
-    {
-        public float minX;
-        public float maxX;
-        public float minY;
-        public float maxY;
-    }
-    public struct ChangeOverTime : IComponentData
-    {
-        public float changePerSecond;
-    }
-    public struct EnemyTag : IComponentData
-    {
-    }
-    public struct MoveSpeed : IComponentData
-    {
-        public float speed;
-    }
-    public struct PlayerTag : IComponentData
-    {
-    }
-    public struct ScrollingBackground : IComponentData
-    {
-        public float speed;
-        public float threshold;
-        public float distance;
-    }
-    public struct Spawner : IComponentData
-    {
-        public float time;
-        public float delay;
-        public bool isPaused;
-        public string spawnedGroup;
-    }
 }
 
 namespace ut.Core2D
@@ -115,10 +70,6 @@ namespace ut.Core2D
 {
 }
 
-namespace ut
-{
-}
-
 namespace ut.HTML
 {
 }
@@ -147,7 +98,19 @@ namespace ut.Rendering
 {
 }
 
+namespace ut.UILayout
+{
+}
+
 namespace ut.Core2D
+{
+}
+
+namespace ut.Text
+{
+}
+
+namespace ut.HTML
 {
 }
 
@@ -205,63 +168,6 @@ namespace ut.EditorExtensions
     }
 }
 
-namespace ut.HitBox2D
-{
-}
-namespace game
-{
-    public struct EnemyBehavior_State : IComponentData
-    {
-        public bool initialized;
-        public bool enabled;
-        public bool onEnableCalled;
-        public bool onDisableCalled;
-    }
-}
-namespace game
-{
-    public class PlayerCollisionSystemJS : IComponentSystem
-    {
-    }
-}
-namespace game
-{
-    [UpdateAfter(typeof(UTiny.Shared.InputFence))]
-    public class PlayerMovementSystemJS : IComponentSystem
-    {
-    }
-}
-namespace game
-{
-    public class ScrollingBackgroundSystemJS : IComponentSystem
-    {
-    }
-}
-namespace game
-{
-    public class SpawnSystemJS : IComponentSystem
-    {
-    }
-}
 namespace ut
 {
-    [UpdateBefore(typeof(UTiny.Shared.UserCodeStart))]
-    public class TimeJS : IComponentSystem
-    {
-    }
-}
-namespace game
-{
-    [UpdateBefore(typeof(UTiny.Shared.InputFence))]
-    public class EnemyBehavior_OnEntityEnableJS : IComponentSystem
-    {
-    }
-}
-namespace game
-{
-    [UpdateBefore(typeof(UTiny.Shared.UserCodeEnd))]
-    [UpdateAfter(typeof(UTiny.Shared.UserCodeStart))]
-    public class EnemyBehavior_OnEntityUpdateJS : IComponentSystem
-    {
-    }
 }

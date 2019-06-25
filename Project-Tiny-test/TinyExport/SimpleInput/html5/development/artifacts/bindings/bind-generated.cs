@@ -1,29 +1,5 @@
 using Unity.Collections.LowLevel.Unsafe;
-namespace entities.game.EnemyGroup
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct Component : UTiny.IComponentData
-    {
-
-
-
-
-
-    }
-}
-namespace entities.game.ExplosionGroup
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct Component : UTiny.IComponentData
-    {
-
-
-
-
-
-    }
-}
-namespace entities.game.MainGroup
+namespace entities.game.NewScene
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
     public struct Component : UTiny.IComponentData
@@ -38,95 +14,11 @@ namespace entities.game.MainGroup
 namespace game
 {
     [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct Boundaries : UTiny.IComponentData
-    {
-
-
-        public float minX;
-        public float maxX;
-        public float minY;
-        public float maxY;
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct ChangeOverTime : UTiny.IComponentData
-    {
-
-
-        public float changePerSecond;
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct EnemyTag : UTiny.IComponentData
-    {
-
-
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct MoveSpeed : UTiny.IComponentData
+    public struct Movement : UTiny.IComponentData
     {
 
 
         public float speed;
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct PlayerTag : UTiny.IComponentData
-    {
-
-
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct ScrollingBackground : UTiny.IComponentData
-    {
-
-
-        public float speed;
-        public float threshold;
-        public float distance;
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct Spawner : UTiny.IComponentData
-    {
-
-
-        public float time;
-        public float delay;
-        public bool isPaused;
-        public string spawnedGroup;
 
 
 
@@ -342,22 +234,6 @@ namespace ut.EditorExtensions
 
 
         public int layer;
-
-
-
-    }
-}
-namespace game
-{
-    [global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential)]
-    public struct EnemyBehavior_State : UTiny.IComponentData
-    {
-
-
-        public bool initialized;
-        public bool enabled;
-        public bool onEnableCalled;
-        public bool onDisableCalled;
 
 
 

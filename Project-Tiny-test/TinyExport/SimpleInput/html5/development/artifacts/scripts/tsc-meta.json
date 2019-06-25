@@ -1,0 +1,67 @@
+{
+    "Success": true,
+    "Diagnostics": [],
+    "Systems": [
+        {
+            "Name": "MovementSystem",
+            "QualifiedName": "game.MovementSystem",
+            "Description": "",
+            "Source": {
+                "File": "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/TinySamples/SimpleInput/Scripts/MovementSystem.ts",
+                "Line": 7,
+                "Character": 15
+            },
+            "ExecuteAfter": [
+                "ut.Shared.InputFence"
+            ],
+            "ExecuteBefore": [
+                "ut.Shared.RenderingFence"
+            ],
+            "RequiredComponents": [
+                "ut.Core2D.TransformLocalPosition",
+                "game.Movement"
+            ]
+        }
+    ],
+    "Filters": [],
+    "Behaviours": [],
+    "Performance": [
+        {
+            "Key": "tsconfig",
+            "Description": "Time taken to read and parse the given tsconfig.json file",
+            "Duration": 100,
+            "Steps": 1
+        },
+        {
+            "Key": "checksum",
+            "Description": "Time taken to compute the MD5 of all inputs",
+            "Duration": 260,
+            "Steps": 1
+        },
+        {
+            "Key": "compile",
+            "Description": "Time taken to compile the TypeScript program",
+            "Duration": 1180,
+            "Steps": 10
+        },
+        {
+            "Key": "emit",
+            "Description": "Time taken to generate and write the JavaScript output",
+            "Duration": 40,
+            "Steps": 2
+        },
+        {
+            "Key": "metadata",
+            "Description": "Time taken to reflect Tiny metadata from the compiled program",
+            "Duration": 0,
+            "Steps": 1
+        }
+    ],
+    "SourceFiles": [
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Assets/TinySamples/SimpleInput/Scripts/MovementSystem.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityGroup.ts",
+        "C:/Users/User/Documents/GitHub/Project-Tiny-test/Project-Tiny-test/Library/PackageCache/com.unity.tiny@0.14.5-preview/Runtime/Modules/UTiny.EntityGroup/Scripts/EntityLookupCache.ts"
+    ],
+    "InputHash": "1a2b9ee6d5834a9785755f259ff4a8f3",
+    "GeneratedAt": "Tue Jun 25 2019 12:27:31 GMT+0300 (RTZ 2 (зима))"
+}

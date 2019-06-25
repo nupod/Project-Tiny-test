@@ -84,8 +84,8 @@
         "Children": [{
             "Item": {
                 "Name": "TinyExport/HelloWorld/html5/development/build/entities.js",
-                "Size": 16936,
-                "CompressedSize": 2882
+                "Size": 16960,
+                "CompressedSize": 2889
             },
             "Children": [{
                 "Item": {
@@ -102,15 +102,15 @@
             }, {
                 "Item": {
                     "Name": "MainGroup",
-                    "Size": 11307,
-                    "CompressedSize": 2204
+                    "Size": 11331,
+                    "CompressedSize": 2216
                 }
             }]
         }, {
             "Item": {
                 "Name": "TinyExport/HelloWorld/html5/development/build/bindings.js",
-                "Size": 108115,
-                "CompressedSize": 8906
+                "Size": 110648,
+                "CompressedSize": 9081
             }
         }, {
             "Item": {
